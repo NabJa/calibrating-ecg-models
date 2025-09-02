@@ -1,0 +1,19 @@
+[project]
+name = "calibration"
+version = "0.1.0"
+description = "Confidence computation for improved calibration and interpretability."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "getemed-ml-library",
+    "ipykernel>=6.29.5",
+    "pywavelets>=1.8.0",
+    "seaborn>=0.13.2",
+    "ssl-model",
+    "torchmetrics>=1.7.1",
+    "wheel>=0.45.1",
+]
+
+[tool.uv.sources]
+getemed-ml-library = { path = "../wheels/getemed_ml_library-0.2.110-py3-none-any.whl" }
+ssl-model = { path = "../wheels/ssl_model-0.0.1.151-py3-none-any.whl" }
